@@ -23,6 +23,10 @@ const skills = [
     id: 6,
     skill: "React.js",
   },
+  {
+    id: 7,
+    skill: "Javascript",
+  },
 ];
 export const SkillsSection = () => {
   return (

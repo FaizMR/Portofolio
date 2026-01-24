@@ -55,14 +55,14 @@ export const ProjectSection = () => {
               <div className="flex justify-between items-center">
                 <div className="flex space-x-3 p-3">
                   <a
-                    href={project.demoURL}
+                    href="https://l-page-perpuskit.vercel.app/"
                     target="_blank"
                     className="text-foreground/80 hover:text-primary transition-colors duration-300"
                   >
                     <ExternalLink size={20} />
                   </a>
                   <a
-                    href={project.githubURL}
+                    href="https://github.com/FaizMR/perpuskit-lite"
                     target="_blank"
                     className="text-foreground/80 hover:text-primary transition-colors duration-300"
                   >
@@ -75,7 +75,7 @@ export const ProjectSection = () => {
         </div>
         <div className="text-center mt-12">
           <a
-            href="https://github.com/FaizLaravel"
+            href="https://github.com/FaizMR"
             target="_blank"
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
           >
