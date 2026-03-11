@@ -1,7 +1,7 @@
 const skills = [
   {
     id: 1,
-    skill: "HTLM",
+    skill: "HTML",
   },
   {
     id: 2,
@@ -26,6 +26,10 @@ const skills = [
   {
     id: 7,
     skill: "Javascript",
+  },
+  {
+    id: 8,
+    skill: "Tailwindcss",
   },
 ];
 export const SkillsSection = () => {

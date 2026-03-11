@@ -7,8 +7,26 @@ const projects = [
     description: "A beautiful landing page using Vue and Tailwind",
     image: "/projects/Perpuskit.png",
     tags: ["Vue", "TailwindCSS", "MySQL"],
-    demoURL: "#",
-    githubURL: "#",
+    demoURL: "https://l-page-perpuskit.vercel.app/",
+    githubURL: "https://github.com/FaizMR/Perpuskit",
+  },
+  {
+    id: 2,
+    title: "UMKM Landing Page",
+    description: "A beautiful landing page using Vue and Tailwind",
+    image: "/projects/Umkm.png",
+    tags: ["Vue", "TailwindCSS", "Typscript"],
+    demoURL: "https://website-sederhana-ashy.vercel.app/",
+    githubURL: "https://github.com/FaizMR/Website_Sederhana",
+  },
+  {
+    id: 1,
+    title: "Perpuskit Landing Page",
+    description: "A beautiful landing page using Vue and Tailwind",
+    image: "/projects/Company.png",
+    tags: ["Vue", "TailwindCSS", "Typscript"],
+    demoURL: "https://website-sederhana-2.vercel.app/",
+    githubURL: "https://github.com/FaizMR/Website_Sederhana_2",
   },
 ];
 export const ProjectSection = () => {
@@ -23,11 +41,11 @@ export const ProjectSection = () => {
           siap digunakan untuk kebutuhan nyata dengan fokus pada UI yang bersih
           dan performa yang optimal.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {projects.map((project, key) => (
             <div
               key={key}
-              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
+              className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover flex flex-col border-2"
             >
               <div className="h-f48 overflow-hidden">
                 <img
@@ -48,27 +66,25 @@ export const ProjectSection = () => {
                   ))}
                 </div>
               </div>
-              <h3 className="text-xl font-semibold mb-1">{project.title}</h3>
-              <p className="text-muted-foreground text-sm mb-4">
+              <h4 className="text-lg font-semibold mb-1">{project.title}</h4>
+              <p className="text-muted-foreground text-sm mb-4 px-10">
                 {project.description}
               </p>
-              <div className="flex justify-between items-center">
-                <div className="flex space-x-3 p-3">
+                <div className="flex mt-auto space-x-3 p-3 items-center">
                   <a
-                    href="https://l-page-perpuskit.vercel.app/"
+                    href={ project.demoURL }
                     target="_blank"
                     className="text-foreground/80 hover:text-primary transition-colors duration-300"
                   >
                     <ExternalLink size={20} />
                   </a>
                   <a
-                    href="https://github.com/FaizMR/perpuskit-lite"
+                    href={ project.githubURL }
                     target="_blank"
                     className="text-foreground/80 hover:text-primary transition-colors duration-300"
                   >
                     <Github size={20} />
                   </a>
-                </div>
               </div>
             </div>
           ))}
