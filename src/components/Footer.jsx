@@ -2,7 +2,7 @@ import { ArrowUp } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="py-12 px-4 relative border-t border-border mt-12 pt-8 flex flex-wrap justify-between items-center">
+    <footer className="flex justify-between items-center p-2 container border-t border-solid">
       <p className="text-sm text-muted-foreground">
         &copy; {new Date().getFullYear} Faiz Muhammad Rijal Fikri. All right
         reserved

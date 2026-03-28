@@ -34,7 +34,7 @@ export const HeroSection = () => {
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-6">
             Saya membangun aplikasi web yang responsif, terstruktur, dan siap
-            digunakan untuk kebutuhan nyata.
+            digunakan untuk kebutuhan nyata. <br />
             <span className="text-base md:text-lg text-muted-foreground max-1-1xl italic">
               ( I build responsive, well-structured web applications that are
               ready for real-world use. )
