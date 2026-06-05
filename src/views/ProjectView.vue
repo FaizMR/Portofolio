@@ -4,8 +4,7 @@
     <div class="relative z-10 px-[5%]">
       <Card class="shadow-transparent bg-transparent border-0">
         <CardHeader class="px-[25%]">
-          <CardTitle class="text-3xl font-bold text-[#C5A059] dark:text-[#E6C687] mb-4">Projects
-          </CardTitle>
+          <h2 class="text-3xl font-bold text-[#C5A059] dark:text-[#E6C687] mb-4">Projects</h2>
           <CardDescription> Proyek ini adalah aplikasi web modern yang responsif, terstruktur, dan
             siap digunakan untuk kebutuhan nyata dengan fokus pada UI yang bersih
             dan performa yang optimal.</CardDescription>
@@ -13,28 +12,30 @@
         <CardContent>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div v-for="project in projects" :key="project.id" class="rounded-lg overflow-hidden shadow-xs card-hover">
-              <Card class="">
-                <CardContent class="text-[#1A1A1A] dark:text-[#F5F5F5] text-xl">
-                  <div class="h-48 overflow-hidden">
-                    <img :src="project.image" :alt="project.title"
-                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                  </div>
-
-                  <div class="p-6">
-                    <div class="flex flex-wrap gap-2 mb-4 justify-center">
-                      <span v-for="tag in project.tags" :key="tag"
-                        class="px-2 py-1 text-xs border font-medium rounded-full bg-secondary text-secondary-foreground">
-                        {{ tag }}
-                      </span>
+              <article class="project-card">
+                <Card>
+                  <CardContent class="text-[#1A1A1A] dark:text-[#F5F5F5] text-xl">
+                    <div class="h-48 overflow-hidden">
+                      <img :src="project.image" :alt="project.title"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                     </div>
 
-                    <h4 class="text-lg font-semibold mb-1 pt-2 text-center">{{ project.title }}</h4>
-                    <p class="text-muted-foreground text-sm mb-4 px-4 text-center">
-                      {{ project.description }}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
+                    <div class="p-6">
+                      <div class="flex flex-wrap gap-2 mb-4 justify-center">
+                        <span v-for="tag in project.tags" :key="tag"
+                          class="px-2 py-1 text-xs border font-medium rounded-full bg-secondary text-secondary-foreground">
+                          {{ tag }}
+                        </span>
+                      </div>
+
+                      <h3 class="text-lg font-semibold mb-1 pt-2 text-center">{{ project.title }}</h3>
+                      <p class="text-muted-foreground text-sm mb-4 px-4 text-center">
+                        {{ project.description }}
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </article>
             </div>
             <div class="mt-12">
               <a href="https://github.com/FaizMR" target="_blank"
@@ -52,7 +53,7 @@
 
 <script setup lang="ts">
 import { ArrowRight } from "lucide-vue-next";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader } from '@/components/ui/card';
 
 const projects = [
   {

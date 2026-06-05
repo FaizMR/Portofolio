@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
 
 
 </script>
@@ -11,14 +11,16 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
         <div class="px-[20%]">
           <Card class="rounded-xl">
             <CardContent>
-              <img src="/src/assets/profile.jpg" alt="Profile Image" class="w-80 h-auto rounded-xl">
+              <h2>
+                <img src="/src/assets/profile.jpg" alt="Profile Image" class="w-80 h-auto rounded-xl">
+              </h2>
             </CardContent>
           </Card>
         </div>
         <div>
           <Card class="shadow-transparent bg-transparent border-0">
             <CardHeader>
-              <CardTitle class="text-3xl font-bold text-[#C5A059] dark:text-[#E6C687] mb-4">Contact</CardTitle>
+              <h2 class="text-3xl font-bold text-[#C5A059] dark:text-[#E6C687] mb-4">Contact</h2>
             </CardHeader>
             <CardContent class="min-w-xl">
               <p class="text-lg text-[#1A1A1A] dark:text-[#F5F5F5] leading-relaxed">

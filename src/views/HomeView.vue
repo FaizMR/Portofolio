@@ -40,22 +40,25 @@ onMounted(() => {
 </script>
 
 <template>
-  <section id="home" class="relative min-h-screen flex items-center justify-center">
-    <div class="absolute inset-0 bg-[#FFFFFF] dark:bg-[#121212] transition-colors duration-700"></div>
-    <div class="relative z-10 w-full mx-auto px-[20%] text-center">
-      <p ref="square" class="text-lg text-[#1A1A1A] dark:text-[#F5F5F5] leading-relaxed">
-        Hallo, saya
-      </p>
-      <h1 ref="text" class="text-5xl font-bold text-[#C5A059] dark:text-[#E6C687] mb-4 tracking-tighter leading-[1.1]">
-        Faiz Muhammad Rijal Fikri.
-      </h1>
-      <p ref="square" class="pt-2 text-xl text-[#1A1A1A] dark:text-[#F5F5F5] leading-relaxed">
-        Saya sebagai <span class="text-[#C5A059] dark:text-[#E6C687]">Web Developer</span>
-      </p>
-    </div>
-  </section>
-  <AboutView />
-  <ResumeView />
-  <ProjectView />
-  <ContactView />
+  <main>
+    <section id="home" class="relative min-h-screen flex items-center justify-center">
+      <div class="absolute inset-0 bg-[#FFFFFF] dark:bg-[#121212] transition-colors duration-700"></div>
+      <div class="relative z-10 w-full mx-auto px-[20%] text-center">
+        <p ref="square" class="text-lg text-[#1A1A1A] dark:text-[#F5F5F5] leading-relaxed">
+          Hallo, saya
+        </p>
+        <h1 ref="text"
+          class="text-5xl font-bold text-[#C5A059] dark:text-[#E6C687] mb-4 tracking-tighter leading-[1.1]">
+          Faiz Muhammad Rijal Fikri.
+        </h1>
+        <p ref="square" class="pt-2 text-xl text-[#1A1A1A] dark:text-[#F5F5F5] leading-relaxed">
+          Saya sebagai <span class="text-[#C5A059] dark:text-[#E6C687]">Web Developer</span>
+        </p>
+      </div>
+    </section>
+    <AboutView />
+    <ResumeView />
+    <ProjectView />
+    <ContactView />
+  </main>
 </template>

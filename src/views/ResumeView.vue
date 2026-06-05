@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import TheSidebar from '@/components/TheSidebar.vue';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { SidebarProvider } from '@/components/ui/sidebar';
 
 const skills = [
@@ -51,7 +51,7 @@ const skills = [
             <Section id="pendidikan">
               <Card class="shadow-transparent bg-transparent border-0">
                 <CardHeader>
-                  <CardTitle class="text-3xl font-bold text-[#C5A059] dark:text-[#E6C687] mb-4">Pendidikan</CardTitle>
+                  <h2 class="text-3xl font-bold text-[#C5A059] dark:text-[#E6C687] mb-4">Pendidikan</h2>
                 </CardHeader>
                 <CardContent>
                   <div class="flex flex-col gap-5">
@@ -76,8 +76,7 @@ const skills = [
             <Section id="pengalaman">
               <Card class="shadow-transparent bg-transparent border-0">
                 <CardHeader>
-                  <CardTitle class="text-3xl font-bold text-[#C5A059] dark:text-[#E6C687] mb-4">Pengalaman
-                  </CardTitle>
+                  <h2 class="text-3xl font-bold text-[#C5A059] dark:text-[#E6C687] mb-4">Pengalaman</h2>
                 </CardHeader>
                 <CardContent>
                   <div class="flex flex-col gap-5">
@@ -109,8 +108,7 @@ const skills = [
             <Section id="keahlian">
               <Card class="shadow-transparent bg-transparent border-0">
                 <CardHeader>
-                  <CardTitle class="text-3xl font-bold text-[#C5A059] dark:text-[#E6C687] mb-4">Keahlian
-                  </CardTitle>
+                  <h2 class="text-3xl font-bold text-[#C5A059] dark:text-[#E6C687] mb-4">Keahlian</h2>
                 </CardHeader>
                 <CardContent>
                   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
