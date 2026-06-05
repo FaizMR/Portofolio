@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
 
 
 </script>
@@ -19,7 +19,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
         <div>
           <Card class="shadow-transparent bg-transparent border-0">
             <CardHeader>
-              <CardTitle class="text-3xl font-bold text-[#C5A059] dark:text-[#E6C687] mb-4">About Me</CardTitle>
+              <h2 class="text-3xl font-bold text-[#C5A059] dark:text-[#E6C687] mb-4">About Me</h2>
             </CardHeader>
             <CardContent>
               <p class="text-lg text-[#1A1A1A] dark:text-[#F5F5F5] leading-relaxed">
